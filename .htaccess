@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/index.php
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|mp3|mp4|woff|woff2|eot|ttf|otf|zip)$
+RewriteRule ^([^/]+)/?$ https://r.rokhdad.media/index.php?url=$1 [L,QSA]
