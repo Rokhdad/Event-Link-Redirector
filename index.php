@@ -1,11 +1,12 @@
 <?php
 $url = $_GET['url'];
 $tagmanagercode = 'MP37P6MH';
+$cd= 5;
 // جدا کردن اجزای URL
 $urlParts = parse_url($url);
 // در صورتی که پیشوند "http://" یا "https://" داشته باشد، حذف می‌شود.
 if (isset($urlParts['scheme']) && ($urlParts['scheme'] == 'http' || $urlParts['scheme'] == 'https')) {
-    $urlParts['scheme'] = '';
+   $urlParts['scheme'] = '';
 }
 // اضافه کردن پیشوند "https://" در صورت عدم وجود آن
 if (!isset($urlParts['scheme']) || empty($urlParts['scheme'])) {
@@ -44,18 +45,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>انتقال دهنده لینک رخداد</title>
-<meta name="keywords" content="انتقال دهنده لینک">
+<meta name="keywords" content="انتقال دهنده لینک رخداد">
 <meta name="description" content="انتقال دهنده لینک رخداد">
 <meta name="robots" content="noindex,nofollow">
-<link rel="stylesheet" href="font.css" type="text/css">
-<link rel="stylesheet" href="./inc/gostyle.css" type="text/css">
-<link rel="stylesheet" href="./inc/alerts-css.min.css" type="text/css">
-<link rel="stylesheet" href="./inc/alerts-css.css" type="text/css">
-<script src="./inc/iconify.min.js"></script>
+<link rel="stylesheet" href="https://r.rokhdad.media/font.css" type="text/css">
+<link rel="stylesheet" href="https://r.rokhdad.media/inc/gostyle.css" type="text/css">
+<link rel="stylesheet" href="https://r.rokhdad.media/inc/alerts-css.min.css" type="text/css">
+<link rel="stylesheet" href="https://r.rokhdad.media/inc/alerts-css.css" type="text/css">
+<script src="https://r.rokhdad.media/inc/iconify.min.js"></script>
 
-<link rel="stylesheet" href="./inc/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://r.rokhdad.media/inc/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-<?php echo '<meta http-equiv="refresh" content="10;URL='.$url.'">'; ?>
+<?php echo '<meta http-equiv="refresh" content="5;URL='.$url.'">'; ?>
 </head>
 <body>
 
